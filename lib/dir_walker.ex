@@ -137,6 +137,7 @@ defmodule DirWalker do
     path
     |> :file.list_dir
     |> ignore_error(path)
+    |> Enum.sort()
     |> Enum.map(fn(rel) -> Path.join(path, rel) end)
   end
 
