@@ -29,7 +29,7 @@ defmodule DirWalker.Mixfile do
       elixir:      ">= 1.0.0",
       deps:        [],
       description: @moduledoc,
-      package:     package
+      package:     package()
     ]
   end
 
